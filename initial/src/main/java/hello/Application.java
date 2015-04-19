@@ -11,6 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
+
+    /**
+     * that’s what makes Spring Data JPA so powerful:
+     * You don’t have to write an implementation of the repository interface.
+     * Spring Data JPA creates an implementation on the fly when you run the application.
+     */
     @Autowired
     CustomerRepository repository;
 
